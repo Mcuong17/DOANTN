@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #fff;
+  --gray-color: #f2f2f2;
+  --main-color: #0b2957;
+  --border-color: #d1d1d1;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+/* Main Body Styeling */
+body {
+  /* height: 100vh; */
+  /* background-image: url("../image/backgroundmain.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; */
+}
+
+.login-ib-page-wraper {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+/* Login Left Style */
+.login-ib-page-left {
+  background: linear-gradient(162.39deg, #0b2957 0%, #101d31 100%);
+  background-size: 100% 100% !important;
+}
+.login-ib-page-left {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+}
+.login-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-title {
+  width: 100%;
+  color: var(--white-color);
+  text-align: left;
+}
+.login-title span {
+  width: 100%;
+  font-size: 3rem;
+  display: inline-block;
+  font-weight: 300;
+  text-align: center;
+}
+.login-title h2 {
+  font-size: 3rem;
+  display: inline-block;
+  font-weight: 800;
+}
+.login-title p {
+  width: 100%;
+  text-align: center;
+}
+.login-desc {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.login-desc p {
+  color: var(--white-color);
+}
+.login-desc a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+/* Login Right Style */
+.login-ib-page-right {
+  padding: 42px 24px 0 24px;
+  background-color: var(--gray-color);
+}
+.login-language {
+  display: flex;
+  gap: 14px;
+}
+.login-language img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+.login-heading {
+  margin: 16px 0 52px 0;
+  text-align: center;
+  color: var(--main-color);
+}
+.login-heading h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.login-container {
+  /* padding: 8px; */
+  margin: 16px 0;
+}
+.login-container-label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.login-icon {
+  padding: 4px;
+  font-size: 18px;
+  color: var(--main-color);
+}
+.login-label {
+  font-size: 16px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.input-login {
+  width: 100%;
+  padding: 6px 10px 6px 16px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+.login-button {
+  width: 100%;
+  margin: 10px 0;
+}
+.login-button > button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: normal;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.login-button > button:hover {
+  opacity: 0.85;
+}
+.login-sign-up {
+  text-align: center;
+  padding: 8px 0;
+}
+.login-sign-up span,
+.login-sign-up a {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+/* Register Form Styling */
+.register-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(162.39deg, #0b2957 0%, #101d31 100%);
+  background-size: 100% 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.register-form {
+  background-color: var(--white-color);
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 60px;
+  border-radius: 23px;
+}
+.register-heading {
+  text-align: center;
+}
+.register-heading > h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+.register-heading > span {
+  font-size: 14px;
+  text-align: center;
+}
+.register-title {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 12px;
+}
+.register-body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 5%;
+}
+.register-info-wraper {
+  width: 30%;
+  margin-bottom: 14px;
+}
+.register-label {
+  font-size: 16px;
+  color: var(--main-color);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+.register-input {
+  padding: 8px 0 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+}
+textarea.register-input {
+  height: 40px;
+}
+.register-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.btn-submit-register {
+  width: 40%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-weight: normal;
+  height: 40px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+}
+.btn-submit-register:hover {
+  opacity: 0.8;
+}

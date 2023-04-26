@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+    <title>Login</title>
+  </head>
+  <body class="d-flex align-items-center">
+    <!-- Login Page -->
+    <section class="login-ib-page-wraper">
+      <!-- Login left -->
+      <div class="login-ib-page-left">
+        <div class="login-logo">
+          <img src="./assets/image/digibank.png" alt="" />
+        </div>
+        <div class="login-title">
+          <span
+            >Welcome to
+            <h2>Digibank</h2></span
+          >
+          <p>Internet Banking</p>
+        </div>
+        <div class="login-desc">
+          <p>Powered by <a href="github.com">MCuong17.github.io</a></p>
+        </div>
+      </div>
+      <!-- Login right -->
+      <div class="login-ib-page-right">
+        <div class="login-language">
+          <img src="./assets/image/lang-US.jpg" alt="" />
+          <p>English</p>
+        </div>
+        <div class="login-heading">
+          <h2>Login</h2>
+          <p>Login to access your account</p>
+        </div>
+        <div class="login-form-wraper">
+          <div class="login-container">
+            <div class="login-container-label">
+              <i class="fa-solid fa-circle-user login-icon"></i>
+              <label class="login-label" for="user-login"> User Name </label>
+            </div>
+            <input
+              type="text"
+              id="user-login"
+              class="input-login input-user-name"
+              placeholder="User Name"
+            />
+          </div>
+          <div class="login-container">
+            <div class="login-container-label">
+              <i class="fa-solid fa-lock login-icon"></i>
+              <label class="login-label" for="password-login"> Password </label>
+            </div>
+            <input
+              type="password"
+              id="password-login"
+              class="input-login input-user-password"
+              placeholder="Password"
+            />
+          </div>
+          <!-- <div class="login-container">
+            <input
+              type="text"
+              id="capcha-login"
+              class="input-login input-user-capcha"
+              placeholder="Enter Capcha"
+            />
+          </div> -->
+
+          <div class="login-button">
+            <button id="login-btn">Login</button>
+          </div>
+          <div class="login-sign-up">
+            <span>Don’t have an account?</span>
+            <a href="#">Self Registration</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Login Page -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

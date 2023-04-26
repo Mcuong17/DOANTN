@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #fff;
+  --gray-color: #f2f2f2;
+  --main-color: #0b2957;
+  --border-color: #d1d1d1;
+  --yellow-color: #FFCC00;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    --bs-gutter-x: 0 !important;
+}
+/* Header */
+.header-top {
+    background-color: var(--white-color);
+}
+.header-top-list {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    list-style: none;
+}
+.header-top-item {
+    font-size: 16px;
+    height: 40px;
+}
+.header-top-item a:hover {
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+.header-top-item a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+.header-menu-list {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    list-style: none;
+}
+.header-menu-item {
+    height: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.header-menu-item.active {
+    border-bottom: 3px solid var(--yellow-color);
+}
+.header-menu-item:hover {
+    border-bottom: 3px solid var(--yellow-color);
+    cursor: pointer;
+}
+.header-menu-link:hover {
+    color: var(--main-color);
+}
+.header-menu-link {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.img-slide {
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+}
+.carousel-caption-custom h5  {
+    color: var(--gray-color);
+    font-weight: 500;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.carousel-caption-custom span {
+    color: var(--yellow-color);
+    font-size: 30px;
+}
+.carousel-caption-custom2 h1 {
+    font-size: 40px;
+    color: var(--white-color);
+    font-weight: bold;
+}
+.carousel-caption-custom2 p {
+    font-size: 40px;
+    color: var(--white-color);
+    font-weight: normal;
+}
+.btn-register {
+    outline: none;
+    border: none;
+    padding: 14px;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn-register:hover {
+    opacity: 0.8;
+}
